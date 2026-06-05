@@ -1,15 +1,15 @@
 ---
 // import Welcome from '../components/Welcome.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 import Layout from '../layouts/Layout.astro';
 const pageTitle = "私のAstro学習ブログ";
 
 
 ---
 <Layout title={pageTitle}>
-		<a href="/">ホーム</a>
-		<a href="/about/">概要</a>
-		<a href="/blog/">ブログ</a>
-
+<Navigation />
  <h1>私のAstro学習ブログ</h1>
     <p>ここには、私がAstroを学んでいく旅の様子を投稿します。</p>
     <ul>
@@ -18,4 +18,5 @@ const pageTitle = "私のAstro学習ブログ";
       <li><a href="/posts/post-3/">記事3</a></li>
     </ul>
 	<!-- <Welcome /> -->
+  <Footer />
  </Layout> 
